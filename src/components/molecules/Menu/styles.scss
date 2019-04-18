@@ -1,0 +1,19 @@
+.molecule_menu {
+	padding: 0;
+}
+.molecule_menu-popper {
+	z-index: 10;
+	.grow {
+		overflow-y: scroll;
+		&.bottom {
+			transform-origin: center top;
+		}
+		&.top {
+			transform-origin: center bottom;
+		}
+		padding: 0;
+		.list {
+			padding: 0;
+		}
+	}
+}

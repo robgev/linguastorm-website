@@ -1,0 +1,14 @@
+@import '~styles/variables';
+
+.molecule_header {
+	height: $header_small_height;
+	width: 100%;
+	background-image: url('/images/top.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	&.big {
+		background-image: url('/images/top_big.png');
+		height: $header_big_height;
+	}
+}

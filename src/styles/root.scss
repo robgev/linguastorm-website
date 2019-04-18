@@ -1,0 +1,26 @@
+@import '~styles/fonts';
+
+* {
+  margin: 0;
+	padding: 0;
+	outline: none;
+	text-decoration: none;
+	box-sizing: border-box;
+  &:before, &:after {
+    box-sizing: inherit;
+  }
+}
+
+html {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+body {
+	background-color: #F5F5F5;
+}
+
+html, body {
+  height: 100vh;
+}

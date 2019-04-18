@@ -1,0 +1,16 @@
+@import '~styles/colors';
+@import '~styles/variables';
+
+.topbar-lmi_container {
+	min-width: $menu_item_size;
+	color: $white;
+	font-family: Gotham;
+	font-size: $menu_text_size;
+	text-transform: uppercase;
+	cursor: pointer;
+	.topbar-lmi_image {
+		height: 15px;
+		width: 30px;
+	}
+}
+
