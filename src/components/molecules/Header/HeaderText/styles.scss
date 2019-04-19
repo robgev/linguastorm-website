@@ -1,0 +1,12 @@
+.molecule_header-text {
+	padding: 200px 0;
+	.molecule_header-headline,
+	.molecule_header-body {
+		color: white;
+		text-shadow: 2px 2px 15px rgba(0,0,0,0.4);
+	}
+	.molecule_header-body {
+		font-size: 1.125rem;
+		font-weight: 100;
+	}
+}

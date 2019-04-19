@@ -1,0 +1,12 @@
+@import '~styles/colors';
+@import '~styles/variables';
+
+.nav-menu_container {
+	min-width: 70px;
+	color: $white;
+	font-family: Gotham;
+	font-size: $menu_text_size;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+

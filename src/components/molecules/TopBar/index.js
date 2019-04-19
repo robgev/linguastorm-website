@@ -5,6 +5,7 @@ import Logo from 'assets/images/logo.png';
 import LANGUAGES from 'constants/Languages';
 
 import LanguageActionItem from './LanguageActionItem';
+import NavMenu from './NavMenu';
 
 import './styles.scss';
 
@@ -12,7 +13,7 @@ const ITEM_HEIGHT = 48;
 
 const TopBar = ({ big, ...props }) => (
 	<FlexBox className="menu-bar" justifyBetween align>
-		<Container>Menu</Container>
+		<NavMenu />
 		<Image alt="Logo" src={Logo} />
 		<Menu
 			actionElement={LanguageActionItem}
