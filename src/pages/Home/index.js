@@ -1,11 +1,11 @@
 import React from 'react';
-import { Container } from 'components/atoms';
 import { Header } from 'components/molecules';
+import OurStory from 'components/OurStory';
 
 const Home = () => (
 	<>
 	<Header big />
-	<Container style={{ height: 300 }}></Container>
+	<OurStory />
 	</>
 );
 

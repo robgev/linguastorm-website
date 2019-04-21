@@ -1,5 +1,10 @@
 import React from 'react';
-import { MenuItem, FlexBox, Image, Text } from 'components/atoms';
+import {
+	LanguageChip,
+	MenuItem,
+	FlexBox,
+	Text
+} from 'components/atoms';
 import LANGUAGES from 'constants/Languages';
 
 import './styles.scss';
@@ -15,11 +20,7 @@ const LanguageMenuItem = ({ language, ...props }) => (
 			<Text
 				className="molecule-language-menu_text"
 			>{LANGUAGES[language]}</Text>
-			<Image
-				alt="Flags"
-				src={`/images/flags/${language}.png`}
-				className="molecule-language-menu_language-icon"
-			/>
+			<LanguageChip language={language} />
 		</FlexBox>
 	</MenuItem>
 );

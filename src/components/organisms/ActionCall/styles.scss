@@ -1,0 +1,12 @@
+@import '~styles/colors';
+
+.organism_action-call {
+	width: 530px;
+	margin: auto;
+	background-color: $secondary_color;
+	border-radius: 10rem;
+	padding: 5px;
+	.organism_action-call_menu {
+		margin-left: 20px;
+	}
+}

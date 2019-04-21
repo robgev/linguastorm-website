@@ -1,0 +1,7 @@
+@import '~styles/variables';
+
+.molecule_language-chip {
+	height: $language_icon_size;
+	width: $language_icon_size;
+	border-radius: 100%;
+}

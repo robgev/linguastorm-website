@@ -1,0 +1,7 @@
+.atom_hexagon {
+	.atom_hexagon-svg {
+		&.shadow {
+			filter: drop-shadow(rgba(9, 111, 139, 0.21) 0px 18px 16px);
+		}
+	}
+}

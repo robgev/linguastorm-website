@@ -15,7 +15,8 @@ const Menu = ({
 	onClick,
 	className,
 	closeOnClick,
-	actionElement: ActionElement,
+	actionElement,
+	actionProps,
 	PaperProps,
 	...props
 }) => {
@@ -40,9 +41,7 @@ const Menu = ({
 
 	return (
 		<>
-			<ActionElement
-				onClick={open ? handleClose : handleClick}
-			/>
+			{actionElement(open ? handleClose : handleClick)}
 			<Popper open={open} className="molecule_menu-popper" anchorEl={anchorEl} transition disablePortal>
 				{({ TransitionProps, placement }) => (
 					<Grow

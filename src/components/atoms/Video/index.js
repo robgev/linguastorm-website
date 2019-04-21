@@ -6,7 +6,7 @@ const Video = ({ className, ...props }) => (
 		loop
 		muted
 		className={`atom_video ${className}`}
-		autoplay="autoplay"
+		autoPlay="autoplay"
 		{...props}
 	/>
 )

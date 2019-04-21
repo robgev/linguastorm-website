@@ -1,0 +1,53 @@
+@import '~styles/colors';
+
+.our-story_hexes-container {
+	position: relative;
+	width: 480px;
+	height: 560px;
+	flex-shrink: 0;
+	.our-story_image-hex {
+		height: 220px;
+		width: 220px;
+		&.image-hex1 {
+			height: 300px;
+			width: 300px;
+		}
+	}
+	.our-story_text-hex {
+		height: 140px;
+		width: 140px;
+		fill: $secondary_color_hover;
+		&.text-hex1 {
+			text {
+				fill: $white
+			}
+		}
+	}
+	> .atom_hexagon {
+		position: absolute;
+		&.image-hex1 {
+			top: 0;
+			left: 10px;
+		}
+		&.text-hex1 {
+			top: 15px;
+			right: 30px;
+		}
+		&.image-hex2 {
+			top: 150px;
+			right: 45px;
+		}
+		&.text-hex2 {
+			top: 225px;
+			left: 0;
+		}
+		&.image-hex3 {
+			top: 325px;
+			left: 100px;
+		}
+		&.text-hex3 {
+			top: 350px;
+			right: 0;
+		}
+	}
+}

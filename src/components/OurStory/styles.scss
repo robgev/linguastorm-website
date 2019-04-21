@@ -1,0 +1,25 @@
+.our-story_main {
+	align-items: flex-start;
+	padding: 80px;
+	.our-story_headline {
+		padding-bottom: 30px;
+	}
+	.our-story_quote {
+		position: relative;
+		margin-top: 20px;
+		margin-bottom: 40px;
+		.our-story_quote-sign {
+			position: absolute;
+			font-size: 70px;
+			&.left {
+				top: -30px;
+				left: -30px;
+			}
+			&.right {
+				line-height: 30px;
+				bottom: -40px;
+				right: 100px;
+			}
+		}
+	}
+}
