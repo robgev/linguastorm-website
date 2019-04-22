@@ -1,5 +1,6 @@
 import React from 'react';
-import { FlexBox, TextBlock, LanguageChip } from 'components/atoms';
+import { FlexBox, TextBlock } from 'components/atoms';
+import { LanguageChip } from 'components/molecules';
 
 import './styles.scss';
 
@@ -21,6 +22,6 @@ const LanguageItem = ({ label, value, onClick, className }) => (
 
 LanguageItem.defaultProps = {
 	className: '',
-}
+};
 
 export default LanguageItem;

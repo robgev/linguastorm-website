@@ -5,17 +5,19 @@ import {
 	HeadlineAccent,
 } from 'components/atoms';
 import { Layout } from 'components/molecules';
+import TeachersList from './TeachersList';
 
 import './styles.scss';
 
 const OurTeachers = () => (
-	<Layout>
-		<FlexBox justify fullWidth className="our-teachers-container">
-			<Headline className="our-teachers_headline">
+	<Layout className="our-teachers_container">
+		<FlexBox justify fullWidth className="our-teachers_headline-container">
+			<Headline>
 				<HeadlineAccent>Our </HeadlineAccent>
 				<HeadlineAccent variant="bold">Teachers</HeadlineAccent>
 			</Headline>
 		</FlexBox>
+		<TeachersList />
 	</Layout>
 );
 

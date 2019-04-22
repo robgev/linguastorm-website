@@ -1,0 +1,35 @@
+
+@import '~styles/colors';
+
+.teacher-item_container {
+	margin: 20px;
+	.teacher-item_teacher-hex {
+		height: 200px;
+		width: 200px;
+	}
+	.teacher-item_teacher-name {
+		font-size: 20px;
+		margin-top: 30px;
+		&.active {
+			margin: 20px 0;
+			color: $white;
+		}
+	}
+	.teacher-item_teacher-title {
+		font-weight: 400;
+		color: $secondary_text_color
+	}
+	.teacher-item_teacher-language {
+		margin-bottom: 20px;
+	}
+	.teacher-item_language-info {
+		color: $white;
+		font-weight: 400;
+	}
+	&:first-of-type {
+		margin-left: 0;
+	}
+	&:last-of-type {
+		margin-right: 0;
+	}
+}

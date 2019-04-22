@@ -1,0 +1,9 @@
+.teachers-list_main-container {
+	position: relative;
+	.teachers-list_back {
+		position: absolute;
+	}
+	.teachers-list_front {
+		z-index: 1;
+	}
+}

@@ -1,11 +1,9 @@
 import React from 'react';
 import {
-	LanguageChip,
 	MenuItem,
 	FlexBox,
-	Text
 } from 'components/atoms';
-import LANGUAGES from 'constants/Languages';
+import { LanguageChip, LanguageLabel } from 'components/molecules';
 
 import './styles.scss';
 
@@ -17,9 +15,10 @@ const LanguageMenuItem = ({ language, ...props }) => (
 			justifyBetween
 			className="molecule-language-menu_menu-item-container"
 		>
-			<Text
+			<LanguageLabel
+				language={language}
 				className="molecule-language-menu_text"
-			>{LANGUAGES[language]}</Text>
+			/>
 			<LanguageChip language={language} />
 		</FlexBox>
 	</MenuItem>

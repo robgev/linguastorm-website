@@ -8,7 +8,6 @@ export { Headline, HeadlineAccent } from './Headline';
 export { Hexagon, HexagonTextLine, HexagonImage } from './Hexagon';
 export { default as IconButton } from './IconButton';
 export { default as Image } from './Image';
-export { default as LanguageChip } from './LanguageChip';
 export { default as MenuItem } from './MenuItem';
 export { default as MenuList } from './MenuList';
 export { default as PaperContainer } from './PaperContainer';
