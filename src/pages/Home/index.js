@@ -5,6 +5,8 @@ import {
 	OurStory,
 	HowItWorks,
 	OurTeachers,
+	Sponsors,
+	LatestBlog,
 } from './components';
 
 const Home = () => (
@@ -14,6 +16,8 @@ const Home = () => (
 	<HowItWorks />
 	<WhyUs />
 	<OurTeachers />
+	<Sponsors />
+	<LatestBlog />
 	<div style={{height: 300}} />
 	</>
 );
