@@ -1,0 +1,72 @@
+@import '~styles/colors';
+
+.why-us_container {
+	position: relative;
+	height: 600px;
+	padding: 100px 0;
+	background-image: url('/images/why_us.png');
+	background-repeat: no-repeat;
+	.why-us_headline {
+		color: $white;
+		padding-bottom: 50px;
+	}
+	.why-us_points {
+		width: 840px;
+		position: relative;
+		.why-us_point-lines {
+			position: relative;
+			width: 50%;
+			height: 110px;
+			border-top: 1px dashed $white;
+			&.left {
+				border-left: 1px dashed $white;
+				border-right: 1px dashed $white;
+				border-top-left-radius: 10px;
+			}
+			&.right {
+				border-right: 1px dashed $white;
+				border-top-right-radius: 10px;
+			}
+		}
+		.why-us_point-number {
+			position: absolute;
+			bottom: -45px;
+			font-family: Helvetica;
+			font-size: 7rem;
+			color: transparent;
+			-webkit-text-stroke: 1px rgba(255, 255, 255, 0.22);
+			&.number1 {
+				left: -80px;
+			}
+			&.number2,
+			&.number3 {
+				right: 40px;
+			}
+		}
+		.why-us_point {
+			margin-top: -10px;
+			&.point1 {
+				margin-left: -15px;
+			}
+			&.point3 {
+				margin-right: -15px;
+			}
+		}
+		.why-us_content {
+			.why-us_content-text {
+				color: $white;
+				font-size: 18px;
+				font-weight: 400;
+				width: 40%;
+				text-align: center;
+				margin-top: 30px;
+				&.text1 {
+					margin-left: -17%;
+				}
+				&.text3 {
+					margin-right: -17%;
+				}
+			}
+		}
+	}
+}

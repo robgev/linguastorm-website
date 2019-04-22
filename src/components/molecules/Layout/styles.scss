@@ -3,7 +3,7 @@
 $layouts_gap: 15px;
 
 .molecule_layout {
-	margin: auto;
+	margin: 0 auto;
 	padding-top: $layouts_gap;
 	max-width: 1200px;
 	transition: all 150ms cubic-bezier(0.075, 0.82, 0.165, 1);

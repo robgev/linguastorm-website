@@ -1,11 +1,20 @@
 import React from 'react';
 import { Header } from 'components/molecules';
-import OurStory from 'components/OurStory';
+import {
+	WhyUs,
+	OurStory,
+	HowItWorks,
+	OurTeachers,
+} from './components';
 
 const Home = () => (
 	<>
 	<Header big />
 	<OurStory />
+	<HowItWorks />
+	<WhyUs />
+	<OurTeachers />
+	<div style={{height: 300}} />
 	</>
 );
 

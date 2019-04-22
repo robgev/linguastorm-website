@@ -108,3 +108,11 @@
 	font-weight: 200;
 	src: local('Gotham XLight Italic'), url('~assets/fonts/Gotham/Gotham-XLightItalic.woff') format('woff');
 }
+
+@font-face {
+	font-family: 'BillyOhio';
+	font-style: normal;
+	font-weight: normal;
+	src: url('~assets/fonts/BillyOhio/BillyOhio.ttf') format('truetype'),
+					url('~assets/fonts/BillyOhio/BillyOhio.otf') format('opentype');
+}

@@ -1,0 +1,24 @@
+@import '~styles/colors';
+
+.point_container {
+	width: 30px;
+	height: 30px;
+	position: relative;
+	.point_outer-circle {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		border-radius: 100%;
+		border: 1px solid $white;
+		&.secondary {
+			border-color: $secondary_color_hover;
+		}
+	}
+	.point_inner-circle {
+		width: 60%;
+		height: 60%;
+		position: absolute;
+		border-radius: 100%;
+		background-color: $white;
+	}
+}

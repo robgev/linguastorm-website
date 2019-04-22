@@ -1,0 +1,19 @@
+@import '~styles/colors';
+
+.how-it-works_container {
+	height: 650px;
+	padding: 110px;
+	background-image: url('/images/works.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	.how-it-works_headline {
+		color: $white;
+		padding-bottom: 110px;
+	}
+	.how-it-works_watch {
+		font-family: BillyOhio;
+		font-size: 3.125rem;
+		color: $white;
+		margin-top: 20px;
+	}
+}

@@ -1,0 +1,19 @@
+@import '~styles/colors';
+
+.why-us_arrow-container {
+	position: relative;
+	margin-bottom: 60px;
+	.why-us_arrow-line {
+		position: absolute;
+		height: 60px;
+		width: 2px;
+		background-color: $white;
+		top: 15px;
+	}
+	.why-us_arrow {
+		color: $white;
+		position: absolute;
+		transform: rotate(90deg);
+		bottom: -50px;
+	}
+}
