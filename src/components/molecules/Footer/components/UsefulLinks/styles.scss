@@ -1,0 +1,16 @@
+.useful-links_container {
+	padding: 60px 0;
+	.useful-links_newsletter {
+		border: 1px solid #7A8085;
+		border-radius: 10rem;
+		margin-left: -70px;
+		.useful-links_input {
+			color: #7A8085;
+			background-color: transparent;
+			min-width: 20em;
+		}
+		.useful-links_button {
+			margin: -1px;
+		}
+	}
+}

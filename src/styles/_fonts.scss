@@ -116,3 +116,17 @@
 	src: url('~assets/fonts/BillyOhio/BillyOhio.ttf') format('truetype'),
 					url('~assets/fonts/BillyOhio/BillyOhio.otf') format('opentype');
 }
+
+@font-face {
+	font-family: 'Larsseit';
+	font-style: normal;
+	font-weight: normal;
+	src: url('~assets/fonts/Larsseit/Larsseit-Medium.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Larsseit';
+	font-style: normal;
+	font-weight: bold;
+	src: url('~assets/fonts/Larsseit/Larsseit-Bold.otf') format('opentype');
+}

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import JssProvider from 'react-jss/lib/JssProvider';
 import { create } from 'jss';
 import { createGenerateClassName, jssPreset, MuiThemeProvider } from '@material-ui/core/styles';
+import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App';
 import theme from './theme';
 import './styles/root.scss';
@@ -18,7 +19,9 @@ const Index = () => {
 	return (
 		<JssProvider jss={jss} generateClassName={generateClassName}>
 			<MuiThemeProvider theme={theme}>
-				<App />
+				<Router>
+					<App />
+				</Router>
 			</MuiThemeProvider>
 		</JssProvider>
 	);

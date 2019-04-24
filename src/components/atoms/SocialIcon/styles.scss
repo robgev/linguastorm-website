@@ -1,0 +1,10 @@
+@import '~styles/variables';
+
+.molecule_social-icon {
+	height: $social_icon_size;
+	width: $social_icon_size;
+	cursor: pointer;
+	border-radius: 100%;
+	margin-right: 10px;
+	color: white;
+}

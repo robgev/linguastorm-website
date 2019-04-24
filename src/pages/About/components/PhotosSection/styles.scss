@@ -1,0 +1,22 @@
+.photos-section_container {
+	padding: 100px 0;
+	.photos-section_headline-container {
+		padding-bottom: 45px;
+	}
+	.photos-section_photo {
+		margin-right: 5px;
+		margin-bottom: 5px;
+	}
+	.photos-section_photo-grid {
+		flex-wrap: wrap;
+		.photos-section_photo {
+			flex: 1;
+		}
+	}
+	.photos-section_text {
+		padding-top: 40px;
+		.photos-section_text-container {
+			width: 47%;
+		}
+	}
+}

@@ -1,4 +1,5 @@
 export { default as BlogPost } from './BlogPost';
+export { default as Footer } from './Footer';
 export { default as Header } from './Header';
 export { default as LanguageChip } from './LanguageChip';
 export { default as LanguageLabel } from './LanguageLabel';

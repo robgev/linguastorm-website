@@ -1,0 +1,27 @@
+@import '~styles/colors';
+
+.hex-cluster_hexes-container {
+	position: relative;
+	width: 540px;
+	height: 540px;
+	flex-shrink: 0;
+	.hex-cluster_image-hex {
+		height: 270px;
+		width: 270px;
+	}
+	> .atom_hexagon {
+		position: absolute;
+		&.image-hex1 {
+			top: 0;
+			left: 135px;
+		}
+		&.image-hex2 {
+			top: 220px;
+			left: 0px;
+		}
+		&.image-hex3 {
+			top: 220px;
+			left: 270px;
+		}
+	}
+}

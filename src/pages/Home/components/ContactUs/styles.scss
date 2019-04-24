@@ -1,0 +1,27 @@
+@import '~styles/colors';
+
+.contact-us_container {
+	height: 850px;
+	padding: 100px 0;
+	background-image: url('/images/contact.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	.contact-us_headline {
+		padding-bottom: 60px;
+		&.bold {
+			font-weight: 600;
+		}
+	}
+	.contact-us_form {
+		width: 60%;
+		.contact-us_form-group {
+			margin-bottom: 20px;
+			> input {
+				min-width: 48%;
+			}
+			> textarea {
+				width: 100%;
+			}
+		}
+	}
+}

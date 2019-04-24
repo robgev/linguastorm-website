@@ -1,0 +1,33 @@
+@import '~styles/colors';
+
+.our-mission_container {
+	height: 650px;
+	padding: 60px 0;
+	background-image: url('/images/mission.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-x: center;
+	.our-mission_hex {
+		height: 480px;
+		width: 480px;
+		.atom_hexagon-svg  {
+			filter: drop-shadow(rgba(34,43,51,0.3) 0px 5px 5px );
+		}
+		.our-mission_headline,
+		.our-mission_text {
+			text-transform: initial;
+		}
+		.our-mission_headline {
+			&.bold {
+				font-weight: 500;
+			}
+			&.thin {
+				font-weight: 200;
+			}
+		}
+		.our-mission_text {
+			font-size: 12%;
+			font-weight: 500;
+		}
+	}
+}

@@ -7,18 +7,38 @@ import HeaderText from './HeaderText';
 
 import './styles.scss';
 
-const Header = ({ big, ...props }) => (
-	<Container className={`molecule_header ${big ? 'big' : ''}`}>
+const Header = ({
+	big,
+	src,
+	...props,
+}) => (
+	<Container
+		className={`molecule_header ${big ? 'big' : ''}`}
+	>
 		<Layout className="molecule_header_main-content">
 			<TopBar />
-			<HeaderText />
-			<ActionCall />
+			<HeaderText big={big} {...props} />
+			{ big &&
+				<ActionCall />
+			}
 		</Layout>
-		<Video
-			className="molecule_header-video"
-			poster="/images/landing.jpeg"
-			src="/video.mp4"
-		/>
+		{ big
+			? (
+				<Video
+					className="molecule_header-video"
+					poster="/images/landing.jpeg"
+					src="/video.mp4"
+				/>
+			)
+			: (
+				<Container
+					style={{
+						backgroundImage: `url(${src})`
+					}}
+					className="molecule_header-image"
+				/>
+			)
+		}
 		<Image className="molecule_header-pattern" src="/images/top_pattern.png" />
 	</Container>
 );
@@ -29,6 +49,7 @@ Header.defaultProps = {
 
 Header.propTypes = {
 	big: PropTypes.bool,
+	src: PropTypes.string,
 };
 
 export default Header;

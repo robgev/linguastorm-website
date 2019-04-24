@@ -8,17 +8,22 @@ import {
 
 import './styles.scss';
 
-const HeaderText = () => (
-	<Container className="molecule_header-text">
+const HeaderText = ({
+	big,
+	thinTitle,
+	boldTitle,
+	children,
+}) => (
+	<Container className={`molecule_header-text ${big ? 'big' : ''}`}>
 		<Headline className="molecule_header-headline">
-			<HeadlineAccent>Learn From Top Ten</HeadlineAccent>
-			<br />
-			<HeadlineAccent variant="bold">Talented Teachers</HeadlineAccent>
+			<HeadlineAccent>{thinTitle} </HeadlineAccent>
+			{ big &&
+				<br />
+			}
+			<HeadlineAccent variant="bold">{boldTitle}</HeadlineAccent>
 		</Headline>
 		<ContentText className="molecule_header-body">
-			Highly customized language courses with unique <br />
-			methodology Delivered by the best teachers from all <br />
-			over the world
+			{children}
 		</ContentText>
 	</Container>
 );

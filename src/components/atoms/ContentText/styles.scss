@@ -1,3 +1,6 @@
 .atom_content-text {
 	font-weight: 500;
+	&.normal {
+		font-weight: 400;
+	}
 }

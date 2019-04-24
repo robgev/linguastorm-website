@@ -12,7 +12,7 @@ import { Play } from 'components/icons';
 
 import './styles.scss';
 
-const OurStory = () => (
+const HowItWorks = () => (
 	<Container className="how-it-works_container">
 		<Layout>
 			<FlexBox column align>
@@ -29,4 +29,4 @@ const OurStory = () => (
 	</Container>
 );
 
-export default OurStory;
+export default HowItWorks;

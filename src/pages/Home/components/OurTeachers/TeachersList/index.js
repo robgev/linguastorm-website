@@ -2,9 +2,6 @@ import React from 'react';
 import {
 	Image,
 	FlexBox,
-	Hexagon,
-	Container,
-	ContentText,
 } from 'components/atoms';
 import Background from 'assets/images/teachers_background.png';
 

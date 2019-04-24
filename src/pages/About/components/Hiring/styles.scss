@@ -1,0 +1,12 @@
+@import '~styles/colors';
+
+.hiring_container {
+	padding: 100px 0;
+	background-color: $secondary_color;
+	.hiring_text-container {
+		color: $white;
+		.hiring_headline {
+			padding-bottom: 20px;
+		}
+	}
+}

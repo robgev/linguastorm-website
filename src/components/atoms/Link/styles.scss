@@ -1,0 +1,7 @@
+.atom_link {
+	color: unset;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}

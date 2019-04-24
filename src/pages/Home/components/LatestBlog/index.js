@@ -9,9 +9,9 @@ import BlogPosts from './BlogPosts';
 
 import './styles.scss';
 
-const OurTeachers = () => (
-	<Layout className="our-teachers_container">
-		<FlexBox justify fullWidth className="our-teachers_headline-container">
+const LatestBlog = () => (
+	<Layout className="latest-blog_container">
+		<FlexBox justify fullWidth className="latest-blog_headline-container">
 			<Headline>
 				<HeadlineAccent>Latest </HeadlineAccent>
 				<HeadlineAccent variant="bold">Blog</HeadlineAccent>
@@ -21,4 +21,4 @@ const OurTeachers = () => (
 	</Layout>
 );
 
-export default OurTeachers;
+export default LatestBlog;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { FlexBox, Image } from 'components/atoms';
+import { FlexBox, Image, Link } from 'components/atoms';
 import { Menu, LanguageMenuItem } from 'components/molecules';
 import Logo from 'assets/images/logo.png';
 import LANGUAGES from 'constants/Languages';
@@ -14,7 +14,9 @@ const ITEM_HEIGHT = 48;
 const TopBar = () => (
 	<FlexBox className="menu-bar" justifyBetween align>
 		<NavMenu />
-		<Image alt="Logo" src={Logo} />
+		<Link to="/">
+			<Image alt="Logo" src={Logo} />
+		</Link>
 		<Menu
 			actionElement={(onClick) =>
 				<LanguageActionItem onClick={onClick} />

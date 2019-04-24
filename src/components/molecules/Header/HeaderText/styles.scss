@@ -1,13 +1,25 @@
 .molecule_header-text {
-	padding: 200px 0;
+	padding: 50px 0;
+	width: 600px;
+	margin: 0px auto;
+	text-align: center;
 	.molecule_header-headline,
 	.molecule_header-body {
 		color: white;
 		text-shadow: 2px 2px 15px rgba(0,0,0,0.4);
 	}
+	.molecule_header-headline {
+		margin-bottom: 20px;
+	}
 	.molecule_header-body {
-		width: 480px;
 		font-size: 1.125rem;
 		font-weight: 100;
+	}
+	&.big {
+		width: 480px;
+		padding: 200px 0;
+		margin: initial;
+		margin-bottom: 20px;
+		text-align: initial;
 	}
 }

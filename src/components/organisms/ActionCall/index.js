@@ -9,13 +9,13 @@ const ActionCall = () => (
 	<FlexBox justifyBetween align className="organism_action-call">
 		<LanguageMenu
 			label="I speak"
-			value='us'
+			value="us"
 			className="organism_action-call_menu"
 			onItemClick={() => console.log('Works')}
 		/>
 		<LanguageMenu
 			label="I want to learn"
-			value='us'
+			value="us"
 			onItemClick={() => console.log('Works')}
 		/>
 		<Button>
