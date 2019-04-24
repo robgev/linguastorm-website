@@ -5,6 +5,7 @@ import {
 	Container,
 	ContentText,
 	HeadlineAccent,
+	YouTubeVideo,
 } from 'components/atoms';
 import { Layout } from 'components/molecules';
 
@@ -20,16 +21,17 @@ const Hiring = () => (
 						<br />
 						<HeadlineAccent variant="bold">People We Hire</HeadlineAccent>
 					</Headline>
-					<ContentText big normal>
+					<ContentText className="hiring_text" big normal>
 						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
 						dolo remque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
 						veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-						<br />
+						<br /><br />
 						Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
 						sed qu ia consequuntur magni dolores eos quirut perspiciatis unde omnis
 						iste natus error sit voluptatem accusantium dolo
 					</ContentText>
 				</Container>
+				<YouTubeVideo />
 			</FlexBox>
 		</Layout>
 	</FlexBox>

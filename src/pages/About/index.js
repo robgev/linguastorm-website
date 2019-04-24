@@ -4,6 +4,7 @@ import { Header, Footer } from 'components/molecules';
 import {
 	AboutSection,
 	PhotosSection,
+	Hiring,
 } from './components';
 
 const About = () => (
@@ -64,6 +65,7 @@ const About = () => (
 		quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.
 	</AboutSection>
 	<PhotosSection />
+	<Hiring />
 	<div style={{height: 500}}></div>
 	<Footer cover />
 	</>
