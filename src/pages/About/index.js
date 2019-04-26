@@ -2,9 +2,10 @@ import React from 'react';
 import { Header, Footer } from 'components/molecules';
 
 import {
+	Hiring,
 	AboutSection,
 	PhotosSection,
-	Hiring,
+	SocialSection,
 } from './components';
 
 const About = () => (
@@ -66,7 +67,7 @@ const About = () => (
 	</AboutSection>
 	<PhotosSection />
 	<Hiring />
-	<div style={{height: 500}}></div>
+	<SocialSection />
 	<Footer cover />
 	</>
 );

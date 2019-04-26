@@ -1,0 +1,35 @@
+@import '~styles/colors';
+
+.social-image_container {
+	position: relative;
+	margin-right: 15px;
+	.social-image_image {
+		display: block;
+		height: 140px;
+		width: 100%;
+	}
+	.social-image_likes {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		opacity: 0;
+		color: $white;
+		opacity: 0;
+		font-family: Gotham;
+		font-weight: 500;
+		.social-image_icon {
+			margin-bottom: 10px;
+		}
+	}
+	&:last-of-type {
+		margin-right: 0;
+	}
+	&:hover {
+		.social-image_likes {
+			opacity: 1;
+			background-color: rgba(3, 94, 134, 0.6);
+		}
+	}
+}

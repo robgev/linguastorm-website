@@ -2,3 +2,4 @@ export { default as AboutSection } from './AboutSection';
 export { default as HexCluster } from './HexCluster';
 export { default as Hiring } from './Hiring';
 export { default as PhotosSection } from './PhotosSection';
+export { default as SocialSection } from './SocialSection';
