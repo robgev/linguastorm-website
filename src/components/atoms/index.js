@@ -23,6 +23,8 @@ export { default as RoundButton } from './RoundButton';
 export { default as SimpleForm } from './SimpleForm';
 export { default as SimpleInput } from './SimpleInput';
 export { default as SocialIcon } from './SocialIcon';
+export { default as Tab } from './Tab';
+export { default as Tabs } from './Tabs';
 export { default as Text } from './Text';
 export { default as TextBlock } from './TextBlock';
 export { default as Title } from './Title';

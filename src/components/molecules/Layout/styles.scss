@@ -7,6 +7,9 @@ $layouts_gap: 15px;
 	padding-top: $layouts_gap;
 	max-width: 1200px;
 	transition: all 150ms cubic-bezier(0.075, 0.82, 0.165, 1);
+	&.reset {
+		margin-bottom: 200px;
+	}
 }
 
 @include for-until-tablet {

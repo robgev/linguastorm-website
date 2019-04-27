@@ -1,0 +1,22 @@
+@import '~styles/colors';
+
+.atom_tab-root {
+	flex: 1;
+	text-transform: initial;
+	border-radius: 10rem;
+	margin: 20px;
+	min-height: 32px;
+	&.atom_tab-selected {
+		color: $white;
+		background-color: $primary_color;
+		font-weight: 500;
+	}
+	&:hover {
+		background-color: $secondary_color_hover;
+		color: $white;
+		opacity: 1;
+	}
+	&:last-of-type {
+		margin-right: 0;
+	}
+}

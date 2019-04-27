@@ -3,8 +3,8 @@ import { Container } from 'components/atoms';
 
 import './styles.scss';
 
-const Layout = ({ className, ...props }) => (
-	<Container className={`molecule_layout ${className}`} {...props} />
+const Layout = ({ className, resetBottom, ...props }) => (
+	<Container className={`molecule_layout ${className} ${resetBottom ? 'reset' : ''}`} {...props} />
 );
 
 Layout.defaultProps = {

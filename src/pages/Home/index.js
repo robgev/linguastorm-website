@@ -15,6 +15,7 @@ const Home = () => (
 	<>
 	<Header
 		big
+		src="/videos/home.mov"
 		thinTitle="Learn From Top Ten"
 		boldTitle="Talented Teachers"
 	>

@@ -13,7 +13,7 @@ const About = () => (
 	<Header
 		thinTitle="About"
 		boldTitle="Us"
-		src="/images/about.png"
+		src="/videos/about.mov"
 	>
 		Highly customized languagea courses
 		with unique methodology Delivered by the
