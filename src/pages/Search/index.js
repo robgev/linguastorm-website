@@ -7,7 +7,7 @@ const Search = () => (
 	<Header
 		thinTitle="Let's Find Your"
 		boldTitle="Teacher"
-		src="/videos/about.mov"
+		src="/images/teacher.png"
 	>
 		Highly customized languagea courses
 		with unique methodology Delivered by the

@@ -22,11 +22,23 @@ const Header = ({
 				<ActionCall />
 			}
 		</Layout>
-		<Video
-			className="molecule_header-video"
-			poster="/images/landing.jpeg"
-			src={src}
-		/>
+		{ big
+			? (
+				<Video
+					className="molecule_header-video"
+					poster="/images/landing.jpeg"
+					src="/video.mp4"
+				/>
+			)
+			: (
+				<Container
+					style={{
+						backgroundImage: `url(${src})`
+					}}
+					className="molecule_header-image"
+				/>
+			)
+		}
 		<Image className="molecule_header-pattern" src="/images/top_pattern.png" />
 	</Container>
 );
