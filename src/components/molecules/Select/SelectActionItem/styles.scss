@@ -1,0 +1,34 @@
+@import '~styles/colors';
+@import '~styles/variables';
+
+.molecule_select {
+	position: relative;
+	background: $white;
+	padding: 5px 20px;
+	border-radius: 10rem;
+	width: $select_width;
+	border: 1px solid $gray;
+	transition: box-shadow 276ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+	border-radius 184ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+	&.open {
+		border-radius: 30px 30px 0 0;
+		border-bottom: none;
+		box-shadow:  0px 5px 30px 0px rgba(0, 0, 0, 0.14);
+	}
+	.molecule_select-label {
+		position: absolute;
+		top: 2px;
+		font-size: 12px;
+	}
+	.molecule_select-text {
+		padding-right: 15px;
+	}
+	.molecule_select-icon {
+		width: 40px;
+		height: 40px;
+		border: 10px solid $gray;
+		background: $gray;
+		border-radius: 100%;
+		margin-right: -15px;
+	}
+}

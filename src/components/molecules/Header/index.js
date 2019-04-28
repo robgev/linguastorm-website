@@ -27,7 +27,7 @@ const Header = ({
 				<Video
 					className="molecule_header-video"
 					poster="/images/landing.jpeg"
-					src="/video.mp4"
+					src={src}
 				/>
 			)
 			: (

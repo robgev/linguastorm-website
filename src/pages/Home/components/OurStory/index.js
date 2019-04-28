@@ -1,6 +1,7 @@
 import React from 'react';
 import {
 	Text,
+	Link,
 	Button,
 	FlexBox,
 	Headline,
@@ -36,7 +37,9 @@ const OurStory = () => (
 					<br />
 					<Text className="our-story_quote-sign right">&rdquo;</Text>
 				</ContentText>
-				<Button color="secondary">Learn More</Button>
+				<Link to="/about">
+					<Button color="secondary">Learn More</Button>
+				</Link>
 			</FlexBox>
 		</FlexBox>
 	</Layout>
