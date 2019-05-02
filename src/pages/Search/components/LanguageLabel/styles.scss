@@ -1,0 +1,16 @@
+@import '~styles/colors';
+
+.search_language-label-container {
+	.search_language-label-title {
+		font-size: 18px;
+		font-weight: 500;
+		color: #333333;
+		margin-bottom: 20px;
+	}
+	.search_language-label-container {
+		background-color: $background_color;
+		padding: 10px;
+		color: $secondary_color;
+		font-weight: 500;
+	}
+}

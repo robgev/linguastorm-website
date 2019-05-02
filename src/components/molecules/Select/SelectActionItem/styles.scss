@@ -21,7 +21,15 @@
 		font-size: 12px;
 	}
 	.molecule_select-text {
+		display: inline-flex;
+		align-items: center;
 		padding-right: 15px;
+		font-weight: 500;
+		> svg {
+			font-size: 16px;
+			width: 16px;
+			height: 17px;
+		}
 	}
 	.molecule_select-icon {
 		width: 40px;

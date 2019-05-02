@@ -4,29 +4,41 @@ import SelectActionItem from './SelectActionItem';
 
 import './styles.scss';
 
-const Select = ({ children, value, onChange }) => {
-	const onItemClick = (e) => {
-		onChange(e.currentTarget.value);
+const Select = ({
+	children,
+	value,
+	onChange,
+	...props,
+}) => {
+	let displayValue = '';
+	const onItemClick = (child) => () => {
+		onChange(child.props.value);
 	};
 
 	const items = React.Children.map(children, child => {
 		const selected = String(value) === String(child.props.value);
+		if (selected) {
+			displayValue = child.props.children;
+		}
 
 		return React.cloneElement(child, {
 			onClick: onItemClick(child),
 			role: 'option',
 			selected,
-			value,
+			value: undefined,
+			'data-value': child.props.value,
 		});
 	});
 
 	return (
 		<Menu
 			className="molecule_select-menu"
-			actionElement={(onClick) =>
+			actionElement={(onClick, open) =>
 				<SelectActionItem
-					value={value}
+					open={open}
 					onClick={onClick}
+					value={displayValue}
+					{...props}
 				/>
 			}
 		>

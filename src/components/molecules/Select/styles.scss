@@ -11,6 +11,9 @@
 		border-top: none;
 		border-radius: 0 0 30px 30px;
 		overflow-y: hidden;
+		&.bottom {
+			transform-origin: center bottom;
+		}
 		.list {
 			> li {
 				&:hover {

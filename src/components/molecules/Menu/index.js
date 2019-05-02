@@ -40,7 +40,7 @@ const Menu = ({
 
 	return (
 		<>
-			{actionElement(open ? handleClose : handleClick)}
+			{actionElement(open ? handleClose : handleClick, open)}
 			<Popper
 				transition
 				open={open}

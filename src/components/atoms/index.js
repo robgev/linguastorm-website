@@ -1,3 +1,4 @@
+export { default as Avatar } from './Avatar';
 export { default as Button } from './Button';
 export { default as Card } from './Card';
 export { default as CardActionArea } from './CardActionArea';
@@ -23,6 +24,7 @@ export { default as RoundButton } from './RoundButton';
 export { default as SimpleForm } from './SimpleForm';
 export { default as SimpleInput } from './SimpleInput';
 export { default as SocialIcon } from './SocialIcon';
+export { default as Stars } from './Stars';
 export { default as Tab } from './Tab';
 export { default as Tabs } from './Tabs';
 export { default as Text } from './Text';

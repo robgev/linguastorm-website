@@ -7,15 +7,23 @@ import { ArrowUp, ArrowDown } from 'components/icons';
 
 import './styles.scss';
 
-const SelectActionItem = ({ value, ...props}) => {
+const SelectActionItem = ({
+	value,
+	label,
+	open,
+	className,
+	nonEmpty,
+	...props
+}) => {
+	const isEmpty = value === '' || value === 0;
 	return (
 		<FlexBox
 			column
-			className={`molecule_select ${open ? 'open' : ''}`}
+			className={`molecule_select ${className} ${open ? 'open' : ''}`}
 			{...props}
 		>
-			{value !== 0 && (
-				<TextBlock className="molecule_select-label">I want to learn</TextBlock>
+			{(!isEmpty && !nonEmpty) && (
+				<TextBlock className="molecule_select-label">{label}</TextBlock>
 			)}
 			<FlexBox
 				align
@@ -23,7 +31,7 @@ const SelectActionItem = ({ value, ...props}) => {
 				justifyBetween
 			>
 				<TextBlock className="molecule_select-text">
-					{value === 0 ? 'I want to learn' : value}
+					{isEmpty ? label : value}
 				</TextBlock>
 				{open
 					? (
