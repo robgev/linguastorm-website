@@ -15,12 +15,12 @@ const LanguageLabel = ({ multiple, language }) =>  (
 				: 'Teaches'
 			}
 		</TextBlock>
-		<Container className="search_language-label-container">
+		<TextBlock  className="search_language-label-container">
 			{ multiple
 				? language.map((l, i) => `${LANGUAGES[l]}${i !== l.length - 1 ? ','  : ''}`)
 				: LANGUAGES[language]
 			}
-		</Container>
+		</TextBlock>
 	</Container>
 );
 

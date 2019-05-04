@@ -6,5 +6,7 @@ export { default as LanguageLabel } from './LanguageLabel';
 export { LanguageMenuItem, LanguageItem, LanguageMenu } from './LanguageMenu';
 export { default as Layout } from './Layout';
 export { default as Menu } from './Menu';
+export { default as PriceCard } from './PriceCard';
+export { default as PriceTag } from './PriceTag';
 export { default as Select } from './Select';
 export { default as TopBar } from './TopBar';

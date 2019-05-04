@@ -1,10 +1,27 @@
-.teacher-card_hexagon-container {
-	position: relative;
-	.teacher-card_play-button {
-		position: absolute;
-		bottom: 60px;
-		left: 0;
-		right: 0;
-		margin: auto;
+.teacher_card_paper {
+	margin-bottom: 30px;
+	.teacher-card_container {
+		.teacher-card_hexagon-container {
+			flex-shrink: 0;
+			position: relative;
+			padding-right: 20px;
+			.teacher-card_hexagon {
+				width: 400px;
+				height: 400px;
+			}
+			.teacher-card_play-button {
+				position: absolute;
+				bottom: 60px;
+				left: 0;
+				right: 0;
+				margin: auto;
+			}
+		}
+		.teacher-card_info-container {
+			min-height: 480px;
+			.teacher-card_tabs-container {
+				margin-bottom: 40px;
+			}
+		}
 	}
 }

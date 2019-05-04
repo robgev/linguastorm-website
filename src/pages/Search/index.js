@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container } from 'components/atoms';
 import {
 	Header,
 	Footer,
@@ -9,8 +10,10 @@ import {
 } from 'utils';
 import {
 	Filters,
-	TeacherTabs,
+	TeacherCard,
 } from './components';
+
+import './styles.scss';
 
 const defaultQuery = {
 	speakLanguage: '',
@@ -48,7 +51,10 @@ const Search = (props) => {
 				defaultQuery={defaultQuery}
 				currentQuery={currentQuery}
 			/>
-			<TeacherTabs />
+			<TeacherCard src={'/images/we3.png'} />
+			<TeacherCard src={'/images/we3.png'} />
+			<TeacherCard src={'/images/we3.png'} />
+			<Container className="teachers_search-results" />
 		</Layout>
 		<Footer cover />
 		</>

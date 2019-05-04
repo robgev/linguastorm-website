@@ -22,8 +22,8 @@ const SectionHeader = ({
 	language,
 }) => (
 	<>
-		<FlexBox align>
-			<Container>
+		<FlexBox align className="search_section-header_container">
+			<Container className="search_section-header_title-container">
 				<SectionTitle>{title}</SectionTitle>
 				{ subTitle &&
 					<SectionSubtitle>{subTitle}</SectionSubtitle>

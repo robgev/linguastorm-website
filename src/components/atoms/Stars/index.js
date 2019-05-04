@@ -15,9 +15,9 @@ const Stars = ({
 );
 
 Stars.defaultProps = {
-	size: 40,
+	size: 25,
 	rating: 0,
-	margin: 15,
+	margin: 5,
 };
 
 export default Stars;

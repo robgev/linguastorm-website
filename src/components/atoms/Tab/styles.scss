@@ -20,3 +20,9 @@
 		margin-right: 0;
 	}
 }
+
+@media (min-width: 960px) {
+	.atom_tab-root {
+		min-width: 50px;
+	}
+}

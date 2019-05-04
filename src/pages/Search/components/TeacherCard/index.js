@@ -5,9 +5,6 @@ import {
 	Container,
 	RoundButton,
 	PaperContainer,
-	LanguageChip,
-	TextBlock,
-	ContentText,
 } from 'components/atoms';
 import { Play } from 'components/icons';
 
@@ -26,8 +23,8 @@ const TeacherCard = ({
 	};
 
 	return (
-		<PaperContainer>
-			<FlexBox align>
+		<PaperContainer className="teacher_card_paper">
+			<FlexBox align className="teacher-card_container">
 				<Container className="teacher-card_hexagon-container">
 					<Hexagon
 						src={src}
@@ -37,18 +34,19 @@ const TeacherCard = ({
 						<Play color="secondary" />
 					</RoundButton>
 				</Container>
-				<FlexBox column>
+				<FlexBox column fullWidth className="teacher-card_info-container">
 					<TeacherTabs
 						value={value}
 						onChange={handleChange}
+						className="teacher-card_tabs-container"
 					/>
 					{value === 0 && (
 						<TeacherInfo
 							name="Guillame"
-							language="en"
+							language="us"
 							rating={5}
 							isNative={true}
-							learnLanguage="en"
+							learnLanguage="us"
 							otherLanguages={[ 'fr', 'de' ]}
 							individualPrice={15.99}
 							groupPrice={15.99}

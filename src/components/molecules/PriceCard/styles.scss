@@ -1,0 +1,17 @@
+@import '~styles/colors';
+
+.molecule_price-card_container {
+	.molecule_price-card {
+		min-width: 500px;
+		border-radius: 10rem;
+		border: 1px solid $gray;
+		padding: 5px;
+		.molecule_price-card_text {
+			font-weight: 600;
+			padding-left: 25px;
+		}
+	}
+	&.molecule_price-card_gutter-bottom {
+		margin-bottom: 25px;
+	}
+}

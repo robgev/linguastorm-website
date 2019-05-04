@@ -1,10 +1,11 @@
 import React from 'react';
 import { Tabs, Tab } from 'components/atoms';
 
-const TeacherTabs = ({ value, onChange }) => (
+const TeacherTabs = ({ value, onChange, className }) => (
 	<Tabs
 		value={value}
 		onChange={onChange}
+		className={className}
 	>
 		<Tab
 			label="Information"
