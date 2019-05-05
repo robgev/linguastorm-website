@@ -1,10 +1,15 @@
+export { default as CourseInfoCard } from './CourseInfoCard';
 export { default as Filters } from './Filters';
 export { default as LanguageLabel } from './LanguageLabel';
+export { default as ReviewCard } from './ReviewCard';
 export { default as SectionHeader } from './SectionHeader';
 export { default as SectionSubtitle } from './SectionSubtitle';
 export { default as SectionTitle } from './SectionTitle';
 export { default as TeacherCard } from './TeacherCard';
+export { default as TeacherCourseInfo } from './TeacherCourseInfo';
 export { default as TeacherInfo } from './TeacherInfo';
 export { default as TeacherLanguages } from './TeacherLanguages';
+export { default as TeacherReviews } from './TeacherReviews';
+export { default as TeacherStory } from './TeacherStory';
 export { default as TeacherTabs } from './TeacherTabs';
 export { default as UserCard } from './UserCard';

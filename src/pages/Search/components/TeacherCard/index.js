@@ -7,10 +7,13 @@ import {
 	PaperContainer,
 } from 'components/atoms';
 import { Play } from 'components/icons';
-
-import TeacherTabs from '../TeacherTabs';
-import TeacherInfo from '../TeacherInfo';
-
+import {
+	TeacherTabs,
+	TeacherInfo,
+	TeacherStory,
+	TeacherCourseInfo,
+	TeacherReviews,
+} from '../';
 import './styles.scss';
 
 const TeacherCard = ({
@@ -53,9 +56,51 @@ const TeacherCard = ({
 							demoPrice={0.99}
 						/>
 					)}
-					{value === 1 && <FlexBox>Item Two</FlexBox>}
-					{value === 2 && <FlexBox>Item Three</FlexBox>}
-					{value === 3 && <FlexBox>Item Four</FlexBox>}
+					{value === 1 && (
+						<TeacherStory
+							story={`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.\n\n
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.\n\n
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tem.`}
+						/>
+					)}
+					{value === 2 && (
+						<TeacherCourseInfo
+							courses={[
+								{
+									id: 1,
+									title: 'Speaking/Presentation',
+									description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.'
+								},
+								{
+									id: 2,
+									title: 'General Language',
+									description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.'
+								}
+							]}
+						/>
+					)}
+					{value === 3 && (
+						<TeacherReviews
+							reviews={[
+								{
+									id: 1,
+									review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis',
+									src: '/images/review.png',
+									lessons: 13,
+									language: 'us',
+									userName: 'Sarah Johnson',
+								},
+								{
+									id: 2,
+									review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis',
+									src: '/images/review.png',
+									lessons: 13,
+									language: 'us',
+									userName: 'Sarah Johnson',
+								}
+							]}
+						/>
+					)}
 					{value === 4 && <FlexBox>Item Five</FlexBox>}
 				</FlexBox>
 			</FlexBox>

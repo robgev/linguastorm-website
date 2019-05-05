@@ -1,0 +1,10 @@
+.teacher_course-info-card_container {
+	margin-bottom: 40px;
+	.teacher_course-info-card_title {
+		display: inline-block;
+		margin-bottom: 20px;
+	}
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}

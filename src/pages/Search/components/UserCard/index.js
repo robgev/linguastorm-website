@@ -4,26 +4,27 @@ import {
 	FlexBox,
 	TextBlock,
 } from 'components/atoms';
+import { PrimaryLink } from 'components/molecules';
 import LANGUAGES from 'constants/Languages';
 
 import './styles.scss';
 
 const UserCard = ({
 	src,
-	name,
 	lessons,
 	language,
+	userName,
 }) =>  (
-	<FlexBox align>
-		<Avatar src={src} />
+	<FlexBox align className="search_user-card_container">
+		<Avatar className="search_user-avatar" src={src} />
 		<FlexBox column>
-			<TextBlock className="search_user-card-name">
-				{name}
-			</TextBlock>
+			<PrimaryLink to="#" className="search_user-card-name">
+				{userName}
+			</PrimaryLink>
 			<TextBlock className="search_user-card-secondary-text">
 				{lessons} Lessons
 			</TextBlock>
-			<TextBlock className="search_user-card-secondary-text">
+			<TextBlock className="search_user-card-secondary-text language-text">
 				{LANGUAGES[language]}
 			</TextBlock>
 		</FlexBox>
