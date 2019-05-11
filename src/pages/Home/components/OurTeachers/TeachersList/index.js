@@ -13,7 +13,7 @@ const FakeTeachersData = [
 	{
 		name: 'Guillaume',
 		title: 'Community Tutor',
-		language: 'us',
+		language: 'en',
 		imageUrl: '/images/teacher1.png'
 	},
 	{

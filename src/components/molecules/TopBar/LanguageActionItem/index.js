@@ -5,7 +5,7 @@ import LANGUAGES from 'constants/Languages';
 
 import './styles.scss';
 
-const LanguageMenuItem = ({ onClick, currentLanguage = 'us' }) => (
+const LanguageMenuItem = ({ onClick, currentLanguage = 'en' }) => (
 	<FlexBox
 		align
 		justifyBetween

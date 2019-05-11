@@ -1,28 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Button, FlexBox } from 'components/atoms';
-import { LanguageMenu } from 'components/molecules';
+import { LanguageMenu, ContainerLink } from 'components/molecules';
 
 import './styles.scss';
 
-const ActionCall = () => (
-	<FlexBox justifyBetween align className="organism_action-call">
-		<LanguageMenu
-			label="I speak"
-			value="us"
-			className="organism_action-call_menu"
-			onItemClick={() => console.log('Works')}
-		/>
-		<LanguageMenu
-			label="I want to learn"
-			value="us"
-			onItemClick={() => console.log('Works')}
-		/>
-		<Button>
-			Find a Teacher
-		</Button>
-	</FlexBox>
-);
+const ActionCall = () => {
+	const [ speakLang, setSpeak ] = useState('en');
+	const [learnLang, setLearn] = useState('es');
+
+	return (
+		<FlexBox justifyBetween align className="organism_action-call">
+			<LanguageMenu
+				label="I speak"
+				value={speakLang}
+				className="organism_action-call_menu"
+				onItemClick={setSpeak}
+			/>
+			<LanguageMenu
+				label="I want to learn"
+				value={learnLang}
+				onItemClick={setLearn}
+			/>
+			<ContainerLink to={`/search?speak=${speakLang}&learn=${learnLang}`}>
+				<Button>
+					Find a Teacher
+				</Button>
+			</ContainerLink>
+		</FlexBox>
+	);
+};
 
 ActionCall.defaultProps = {
 	big: false,

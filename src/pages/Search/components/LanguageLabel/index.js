@@ -3,7 +3,6 @@ import {
 	TextBlock,
 	Container,
 } from 'components/atoms';
-import LANGUAGES from 'constants/Languages';
 
 import './styles.scss';
 
@@ -17,8 +16,8 @@ const LanguageLabel = ({ multiple, language }) =>  (
 		</TextBlock>
 		<TextBlock  className="search_language-label-container">
 			{ multiple
-				? language.map((l, i) => `${LANGUAGES[l]}${i !== l.length - 1 ? ','  : ''}`)
-				: LANGUAGES[language]
+				? language.map((l, i) => `${l.englishName}${i !== l.length - 1 ? ','  : ''}`)
+				: language.englishName
 			}
 		</TextBlock>
 	</Container>

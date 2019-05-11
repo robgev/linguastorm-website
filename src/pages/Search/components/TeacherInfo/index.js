@@ -16,27 +16,28 @@ const TeacherInfo = ({
 	otherLanguages,
 	individualPrice,
 	groupPrice,
-	demoPrice,
+	groupTrialPrice,
+	individualTrialPrice,
 }) =>  (
 	<>
 		<SectionHeader
 			title={name}
 			stars={rating}
-			language={learnLanguage}
+			language={language}
 			subTitle={`${isNative ? 'Native ' : ''}Teacher`}
 		/>
 		<TeacherLanguages
-			language={language}
+			language={learnLanguage}
 			otherLanguages={otherLanguages}
 		/>
 		<PriceCard
 			individual
 			price={individualPrice}
-			demoPrice={demoPrice}
+			demoPrice={individualTrialPrice}
 		/>
 		<PriceCard
 			price={groupPrice}
-			demoPrice={demoPrice}
+			demoPrice={groupTrialPrice}
 		/>
 	</>
 );

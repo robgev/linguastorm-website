@@ -1,14 +1,16 @@
 import React from 'react';
 import {
 	Text,
-	Link,
 	Button,
 	FlexBox,
 	Headline,
 	ContentText,
 	HeadlineAccent,
 } from 'components/atoms';
-import { Layout } from 'components/molecules';
+import {
+	Layout,
+	ContainerLink,
+} from 'components/molecules';
 
 import Hexes from './Hexes';
 
@@ -37,9 +39,9 @@ const OurStory = () => (
 					<br />
 					<Text className="our-story_quote-sign right">&rdquo;</Text>
 				</ContentText>
-				<Link to="/about">
+				<ContainerLink to="/about">
 					<Button color="secondary">Learn More</Button>
-				</Link>
+				</ContainerLink>
 			</FlexBox>
 		</FlexBox>
 	</Layout>

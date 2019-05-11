@@ -14,7 +14,7 @@ export default {
 	cz: 'Czech',
 	kr: 'Korean',
 	de: 'German',
-	us: 'English',
+	en: 'English',
 	tr: 'Turkish',
 	ir: 'Farsi',
 	am: 'Armenian',

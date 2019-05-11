@@ -45,11 +45,11 @@ const Filters = ({
 
 	const {
 		level,
+		learn,
+		speak,
 		course,
 		orderBy,
 		isNative,
-		speakLanguage,
-		learnLanguage,
 	} = currentQuery;
 
 	return (
@@ -59,9 +59,9 @@ const Filters = ({
 				<FlexBox align justifyBetween>
 					<Select
 						label="I speak"
-						value={speakLanguage}
+						value={speak}
 						className="search_filters-select"
-						onChange={changeFilters('speakLanguage')}
+						onChange={changeFilters('speak')}
 					>
 						<MenuItem value="en">English</MenuItem>
 						<MenuItem value="es">Spanish</MenuItem>
@@ -69,9 +69,9 @@ const Filters = ({
 					</Select>
 					<Select
 						label="I want to learn"
-						value={learnLanguage}
+						value={learn}
 						className="search_filters-select"
-						onChange={changeFilters('learnLanguage')}
+						onChange={changeFilters('learn')}
 					>
 						<MenuItem value="en">English</MenuItem>
 						<MenuItem value="es">Spanish</MenuItem>

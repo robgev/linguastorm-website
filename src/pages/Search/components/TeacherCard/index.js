@@ -17,9 +17,32 @@ import {
 import './styles.scss';
 
 const TeacherCard = ({
-	src,
+	// id,
+	teacher,
+	isNative,
+	language,
+	groupPrice,
+	individualPrice,
+	groupTrialPrice,
+	individualTrialPrice,
 }) => {
 	const [ value, setValue ] = useState(0);
+	const {
+		// id: teacherId,
+		rating,
+		// country,
+		languages,
+		// greetingText,
+		// headlineText,
+		summaryText,
+		// videoLink,
+		user: {
+			// id: teacherUserId,
+			firstName = '',
+			lastName = '',
+			profileImage
+		}
+	} = teacher;
 
 	const handleChange = (_, value) => {
 		setValue(value);
@@ -30,7 +53,7 @@ const TeacherCard = ({
 			<FlexBox align className="teacher-card_container">
 				<Container className="teacher-card_hexagon-container">
 					<Hexagon
-						src={src}
+						src={profileImage}
 						className="teacher-card_hexagon"
 					/>
 					<RoundButton className="teacher-card_play-button">
@@ -45,22 +68,21 @@ const TeacherCard = ({
 					/>
 					{value === 0 && (
 						<TeacherInfo
-							name="Guillame"
-							language="us"
-							rating={5}
-							isNative={true}
-							learnLanguage="us"
-							otherLanguages={[ 'fr', 'de' ]}
-							individualPrice={15.99}
-							groupPrice={15.99}
-							demoPrice={0.99}
+							name={`${firstName} ${lastName}`}
+							language={language.code} // It's probably country instead
+							rating={rating}
+							isNative={isNative}
+							learnLanguage={language}
+							otherLanguages={languages}
+							individualPrice={individualPrice}
+							groupPrice={groupPrice}
+							groupTrialPrice={groupTrialPrice}
+							individualTrialPrice={individualTrialPrice}
 						/>
 					)}
 					{value === 1 && (
 						<TeacherStory
-							story={`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.\n\n
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.\n\n
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tem.`}
+							story={summaryText}
 						/>
 					)}
 					{value === 2 && (
@@ -87,7 +109,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tem.`}
 									review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis',
 									src: '/images/review.png',
 									lessons: 13,
-									language: 'us',
+									language: 'en',
 									userName: 'Sarah Johnson',
 								},
 								{
@@ -95,7 +117,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tem.`}
 									review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis',
 									src: '/images/review.png',
 									lessons: 13,
-									language: 'us',
+									language: 'en',
 									userName: 'Sarah Johnson',
 								}
 							]}

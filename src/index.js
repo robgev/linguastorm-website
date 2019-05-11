@@ -4,10 +4,16 @@ import JssProvider from 'react-jss/lib/JssProvider';
 import { create } from 'jss';
 import { createGenerateClassName, jssPreset, MuiThemeProvider } from '@material-ui/core/styles';
 import { BrowserRouter as Router } from 'react-router-dom';
+import ApolloClient from 'apollo-boost';
+import { ApolloProvider } from 'react-apollo';
 import App from './App';
 import theme from './theme';
 import './styles/root.scss';
 // import * as serviceWorker from './serviceWorker';
+
+const client = new ApolloClient({
+	uri: '/graphql'
+});
 
 const Index = () => {
 	const generateClassName = createGenerateClassName();
@@ -19,9 +25,11 @@ const Index = () => {
 	return (
 		<JssProvider jss={jss} generateClassName={generateClassName}>
 			<MuiThemeProvider theme={theme}>
-				<Router>
-					<App />
-				</Router>
+				<ApolloProvider client={client}>
+					<Router>
+						<App />
+					</Router>
+				</ApolloProvider>
 			</MuiThemeProvider>
 		</JssProvider>
 	);

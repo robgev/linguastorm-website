@@ -1,0 +1,9 @@
+@import '~styles/colors';
+
+.atom_loading {
+	display: block;
+	margin: 10px auto;
+	.circle {
+		color: $primary_color;
+	}
+}

@@ -16,6 +16,7 @@ export { default as HorizontalDivider } from './HorizontalDivider';
 export { default as IconButton } from './IconButton';
 export { default as Image } from './Image';
 export { default as Link } from './Link';
+export { default as Loading } from './Loading';
 export { default as MenuItem } from './MenuItem';
 export { default as MenuList } from './MenuList';
 export { default as PaperContainer } from './PaperContainer';

@@ -13,7 +13,7 @@ const LanguageChip = ({ language, className, ...props }) => (
 );
 
 LanguageChip.defaultProps = {
-	language: 'us',
+	language: 'en',
 	className: '',
 };
 

@@ -5,9 +5,11 @@ import {
 	Footer,
 	Layout,
 } from 'components/molecules';
+import { Query } from 'components/organisms';
 import {
 	searchToQuery,
 } from 'utils';
+import { GET_TEACHER_COURSES } from 'constants/Queries';
 import {
 	Filters,
 	TeacherCard,
@@ -16,11 +18,11 @@ import {
 import './styles.scss';
 
 const defaultQuery = {
-	speakLanguage: '',
-	learnLanguage: '',
+	speak: '',
+	learn: '',
 	course: '',
 	level: 0,
-	isNative: true,
+	isNative: null,
 	orderBy: '-rating',
 };
 
@@ -28,6 +30,29 @@ const Search = (props) => {
 	const currentQuery = {
 		...defaultQuery,
 		...searchToQuery(props.location.search)
+	};
+
+	const constructVariables = () => {
+		const {
+			speak,
+			learn,
+			// course,
+			level,
+			isNative,
+			orderBy
+		} = currentQuery;
+		return {
+			after: null,
+			learn,
+			speak,
+			levelA: level >= 1 || null,
+			levelB: level >= 2 || null,
+			levelC: level >= 3 || null,
+			orderBy,
+			isNative,
+			id: null,
+			subCourses: null,
+		};
 	};
 
 	// const resetFilters = () => {
@@ -51,9 +76,23 @@ const Search = (props) => {
 				defaultQuery={defaultQuery}
 				currentQuery={currentQuery}
 			/>
-			<TeacherCard src={'/images/we3.png'} />
-			<TeacherCard src={'/images/we3.png'} />
-			<TeacherCard src={'/images/we3.png'} />
+			<Query
+				query={GET_TEACHER_COURSES}
+				variables={constructVariables()}
+			>
+				{(data) => (
+					<>
+						{data.allTeacherCourses &&
+						data.allTeacherCourses.edges.length > 0 &&
+						data.allTeacherCourses.edges.map(tc => (
+							<TeacherCard
+								key={tc.node.id}
+								{...tc.node}
+							/>
+						))}
+					</>
+				)}
+			</Query>
 			<Container className="teachers_search-results" />
 		</Layout>
 		<Footer cover />

@@ -15,7 +15,7 @@ const LanguageLabel = ({ language, className, ...props }) => (
 );
 
 LanguageLabel.defaultProps = {
-	language: 'us',
+	language: 'en',
 	className: '',
 };
 
