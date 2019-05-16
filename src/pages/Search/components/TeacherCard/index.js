@@ -38,8 +38,7 @@ const TeacherCard = ({
 		// videoLink,
 		user: {
 			// id: teacherUserId,
-			firstName = '',
-			lastName = '',
+			fullName,
 			profileImage
 		}
 	} = teacher;
@@ -68,7 +67,7 @@ const TeacherCard = ({
 					/>
 					{value === 0 && (
 						<TeacherInfo
-							name={`${firstName} ${lastName}`}
+							name={fullName}
 							language={language.code} // It's probably country instead
 							rating={rating}
 							isNative={isNative}

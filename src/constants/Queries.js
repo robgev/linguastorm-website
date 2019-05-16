@@ -1,8 +1,70 @@
 import gql from 'graphql-tag';
 
+export const GET_FILTER_COURSES = gql`
+	{
+		allCourses {
+			edges {
+				node {
+					title,
+					id,
+				}
+			}
+		}
+	}
+`;
+
+export const GET_FILTER_SUBCOURSES = gql`
+	{
+		allSubCourses {
+			edges {
+				node {
+					name,
+					id,
+				}
+			}
+		}
+	}
+`;
+
+export const GET_ALL_LANGUAGES_FILTER = gql`
+	{
+		allLanguages{
+			englishName
+			code
+		}
+	}
+`;
+
+export const GET_ALL_FILTERS = gql`
+	{
+		allSubCourses {
+			edges {
+				node {
+					name,
+					id,
+				}
+			}
+		},
+		allLanguages{
+			englishName
+			code
+		}
+		allCourses {
+			edges {
+				node {
+					title,
+					id,
+				}
+			}
+		},
+	}
+`;
+
+// $after: String,
+// first: 100,
+// after: $after,
 export const GET_TEACHER_COURSES = gql`
 	query fetchTeachers(
-			$after: String,
 			$id: ID,
 			$subCourses: [ID],
 			$levelA: Boolean,
@@ -14,8 +76,6 @@ export const GET_TEACHER_COURSES = gql`
 			$speak: String
 		) {
 		allTeacherCourses(
-			first: 100,
-			after: $after,
 			id: $id,
 			subCourses: $subCourses,
 			levelA: $levelA,
@@ -37,8 +97,7 @@ export const GET_TEACHER_COURSES = gql`
 						summaryText
 						user {
 							id
-							firstName
-							lastName
+							fullName
 							profileImage
 						}
 						languages {

@@ -6,6 +6,8 @@ import {
 } from 'components/atoms';
 import { Select } from 'components/molecules';
 import { ArrowUp, ArrowDown } from 'components/icons';
+import { graphql } from 'react-apollo';
+import { GET_ALL_FILTERS } from 'constants/Queries';
 import Storage from 'api/storage';
 import {
 	queryToSearch,
@@ -15,6 +17,11 @@ import {
 import './styles.scss';
 
 const Filters = ({
+	data: {
+		allSubCourses,
+		allLanguages,
+		allCourses,
+	},
 	history,
 	location,
 	defaultQuery,
@@ -51,6 +58,11 @@ const Filters = ({
 		orderBy,
 		isNative,
 	} = currentQuery;
+	const languages = !allLanguages
+		? null
+		: allLanguages.map(({ englishName, code }) =>
+			<MenuItem key={code} value={code}>{englishName}</MenuItem>
+		);
 
 	return (
 		<FlexBox align justifyBetween className="search_filters-container">
@@ -63,9 +75,7 @@ const Filters = ({
 						className="search_filters-select"
 						onChange={changeFilters('speak')}
 					>
-						<MenuItem value="en">English</MenuItem>
-						<MenuItem value="es">Spanish</MenuItem>
-						<MenuItem value="ge">German</MenuItem>
+						{languages}
 					</Select>
 					<Select
 						label="I want to learn"
@@ -73,9 +83,7 @@ const Filters = ({
 						className="search_filters-select"
 						onChange={changeFilters('learn')}
 					>
-						<MenuItem value="en">English</MenuItem>
-						<MenuItem value="es">Spanish</MenuItem>
-						<MenuItem value="ge">German</MenuItem>
+						{languages}
 					</Select>
 					<Select
 						nonEmpty
@@ -105,9 +113,23 @@ const Filters = ({
 						className="search_filters-select"
 						onChange={changeFilters('course')}
 					>
-						<MenuItem value={1}>Course 1</MenuItem>
-						<MenuItem value={2}>Course 2</MenuItem>
-						<MenuItem value={3}>Course 3</MenuItem>
+						{!allCourses
+							? null
+							: allCourses.edges.map(({ node }) =>
+								<MenuItem key={node.id} value={node.id}>{node.title}</MenuItem>
+							)}
+					</Select>
+					<Select
+						label="SubCourse"
+						value={course}
+						className="search_filters-select"
+						onChange={changeFilters('subCourses')}
+					>
+						{!allSubCourses
+							? null
+							: allSubCourses.edges.map(({ node }) =>
+								<MenuItem key={node.id} value={node.id}>{node.name}</MenuItem>
+							)}
 					</Select>
 				</FlexBox>
 			</FlexBox>
@@ -131,4 +153,4 @@ const Filters = ({
 	);
 };
 
-export default Filters;
+export default graphql(GET_ALL_FILTERS)(Filters);

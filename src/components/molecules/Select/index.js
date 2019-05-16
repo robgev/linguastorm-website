@@ -4,6 +4,8 @@ import SelectActionItem from './SelectActionItem';
 
 import './styles.scss';
 
+const ITEM_HEIGHT = 48;
+
 const Select = ({
 	children,
 	value,
@@ -33,6 +35,11 @@ const Select = ({
 	return (
 		<Menu
 			className="molecule_select-menu"
+			PaperProps={{
+				style: {
+					maxHeight: ITEM_HEIGHT * 4.5,
+				},
+			}}
 			actionElement={(onClick, open) =>
 				<SelectActionItem
 					open={open}

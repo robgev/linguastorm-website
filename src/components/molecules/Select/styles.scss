@@ -1,6 +1,6 @@
 @import '~styles/colors';
 
-.molecule_menu-popper {
+.molecule_select-menu {
 	margin-left: 1px;
 	width: 195px;
 	.grow {
@@ -10,7 +10,12 @@
 		border: 1px solid $gray;
 		border-top: none;
 		border-radius: 0 0 30px 30px;
-		overflow-y: hidden;
+		&::-webkit-scrollbar {
+			background: none;
+		}
+		&::-webkit-scrollbar-thumb {
+			background-color: transparent;
+		}
 		&.bottom {
 			transform-origin: center bottom;
 		}

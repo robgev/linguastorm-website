@@ -23,6 +23,7 @@ const defaultQuery = {
 	course: '',
 	level: 0,
 	isNative: null,
+	subCourses: null,
 	orderBy: '-rating',
 };
 

@@ -14,9 +14,9 @@ const LanguageLabel = ({ multiple, language }) =>  (
 				: 'Teaches'
 			}
 		</TextBlock>
-		<TextBlock  className="search_language-label-container">
+		<TextBlock  className="search_language-label">
 			{ multiple
-				? language.map((l, i) => `${l.englishName}${i !== l.length - 1 ? ','  : ''}`)
+				? language.map((l, i) => `${l.englishName}${language.length > 1 && i !== language.length - 1 ? ','  : ''}`)
 				: language.englishName
 			}
 		</TextBlock>
