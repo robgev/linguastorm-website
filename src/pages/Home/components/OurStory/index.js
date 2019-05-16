@@ -26,11 +26,12 @@ const OurStory = () => (
 					<HeadlineAccent variant="bold">Story</HeadlineAccent>
 				</Headline>
 				<ContentText className="our-story_text">
-					We were two university graduate friends teaching Spanish to spread our love for
-					the language. Soon we realised that knowing a widely spoken language opens
-					doors for countless opportunities and knowledge sources. So,
+				LinguaStorm provides you an opportunity to choose the most appropriate course
+				for your personal, business or academic purposes. Our teachers use the methodology
+				which we developed by  elaborating on the best existing practices. It takes into account the
+				actual language level of the student and the target level, hence customizing the user experience.
 				</ContentText>
-				<ContentText big color="secondary" className="our-story_quote">
+				{/* <ContentText big color="secondary" className="our-story_quote">
 					<Text className="our-story_quote-sign left">&ldquo;</Text>
 					<br />
 					we created an online platform where users can get access to top 10%
@@ -38,7 +39,7 @@ const OurStory = () => (
 					provide very high quality & fast learning experience.
 					<br />
 					<Text className="our-story_quote-sign right">&rdquo;</Text>
-				</ContentText>
+				</ContentText> */}
 				<ContainerLink to="/about">
 					<Button color="secondary">Learn More</Button>
 				</ContainerLink>

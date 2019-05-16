@@ -22,13 +22,14 @@ const Hiring = () => (
 						<HeadlineAccent variant="bold">People We Hire</HeadlineAccent>
 					</Headline>
 					<ContentText className="hiring_text" big normal>
-						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-						dolo remque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-						veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-						<br /><br />
-						Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-						sed qu ia consequuntur magni dolores eos quirut perspiciatis unde omnis
-						iste natus error sit voluptatem accusantium dolo
+						Our company culture was the number one priority when we began as two co-founders.
+						We knew the next person we hire would inherit that culture and would propagate it as
+						we grow. So, we set our culture based on integrity, trust, mutual respect, accountability,
+						ownership, passion and fun and we decided that technology should also play a role. <br /><br />
+						We think that teachers should spend more time preparing lessons and less time grading papers.
+						Technology can help and this  was part of our motivation for starting to create this platform. <br /><br />
+						Take heart. Our teachers know how to fix your education performance problem. <br /><br />
+						And the good news is that we love awesome people to join us who share our values and culture!
 					</ContentText>
 				</Container>
 				<YouTubeVideo />

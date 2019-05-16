@@ -44,17 +44,13 @@ const WhyUs = () => (
 					</FlexBox>
 					<FlexBox fullWidth justifyBetween className="why-us_content">
 						<ContentText className="why-us_content-text text1">
-							We Provide Top Ten Percent
-							Language Teachers
+							Qualified Teachers
 						</ContentText>
 						<ContentText className="why-us_content-text text2">
-							We provide our teachers with proven
-							teaching methodology and materials and
-							maintain high quality control.
+							Proven Methodology
 						</ContentText>
 						<ContentText className="why-us_content-text text3">
-							We Have Highly Customized
-							Courses in High Quality
+							Customized Courses
 						</ContentText>
 					</FlexBox>
 				</FlexBox>

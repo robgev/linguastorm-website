@@ -51,18 +51,17 @@ const PhotosSection = () => (
 		>
 			<Container className="photos-section_text-container">
 				<ContentText big normal>
-					Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-					accu santium dolo remque laudantium, totam rem aperiam, eaque ipsa
-					quae ab illo inventore veritatis et quasi architecto beatae
-					vitae dicta sunt explicabo.
+					Knowing a foreign language other than your native language has evolved
+					to be extremely beneficial. Whether viewed from the financial or social aspect,
+					being able to communicate in a foreign language helps to make ‘real’ connection
+					with people and provides a better understanding of your language.
 				</ContentText>
 			</Container>
 			<Container className="photos-section_text-container">
 				<ContentText big normal>
-					Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-					accu santium dolo remque laudantium, totam rem aperiam, eaque ipsa
-					quae ab illo inventore veritatis et quasi architecto beatae
-					vitae dicta sunt explicabo.
+					Whether you learn a language for a specific reason or out of interest,
+					learning a foreign language will lead to long-term success. It will open up
+					new avenues before you. The more language you know, the better you can express yourself.
 				</ContentText>
 			</Container>
 		</FlexBox>

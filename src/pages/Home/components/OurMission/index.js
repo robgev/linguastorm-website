@@ -32,53 +32,39 @@ const OurMission = () => (
 						Mission
 					</HexagonTextLine>
 					<HexagonTextLine
-						x={94.8}
+						x={100.8}
 						y={120}
 						className="our-mission_text"
 					>
-						Lorem ipsum dolor sit amet, consectetur adipiscing
+						The internet is becoming
 					</HexagonTextLine>
 					<HexagonTextLine
-						x={95}
-						y={123}
+						x={96}
+						y={125}
 						className="our-mission_text"
 					>
-						elit, sed do eiusmod tempor incididunt ut labore et
+						the town square for the global
 					</HexagonTextLine>
 					<HexagonTextLine
-						x={94.4}
-						y={126}
+						x={97.4}
+						y={130}
 						className="our-mission_text"
 					>
-						dolore magna aliqua. Ut enim ad minim veniam, quis
+						village of tomorrow and our
 					</HexagonTextLine>
 					<HexagonTextLine
-						x={93.8}
-						y={129}
-						className="our-mission_text"
-					>
-						nostrud exercitation ullamco laboris nisi ut aliquip ex
-					</HexagonTextLine>
-					<HexagonTextLine
-						x={96.8}
-						y={132}
-						className="our-mission_text"
-					>
-					ea commodo consequat. Duis aute irure dolor in
-					</HexagonTextLine>
-					<HexagonTextLine
-						x={94.8}
+						x={104.8}
 						y={135}
 						className="our-mission_text"
 					>
-						reprehenderit in voluptate velit esse cillum dolore eu
+						mission is to bridge
 					</HexagonTextLine>
 					<HexagonTextLine
-						x={108.8}
-						y={138}
+						x={106.8}
+						y={140}
 						className="our-mission_text"
 					>
-						fugiat nulla pariatur.
+						the future divide.
 					</HexagonTextLine>
 				</Hexagon>
 			</FlexBox>

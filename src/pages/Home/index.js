@@ -16,12 +16,10 @@ const Home = () => (
 	<Header
 		big
 		src="/videos/home.mov"
-		thinTitle="Learn From Top Ten"
-		boldTitle="Talented Teachers"
+		thinTitle="Find the best "
+		boldTitle="teacher for you!"
 	>
-		Highly customized language courses with unique
-		methodology Delivered by the best teachers from all
-		over the world
+		Studying online with LinguaStorm gives you more flexibility and a wide choice of courses.
 	</Header>
 	<OurStory />
 	<HowItWorks />
