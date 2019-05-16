@@ -5,6 +5,7 @@ import {
 	TextBlock,
 	SocialIcon,
 } from 'components/atoms';
+import { ContainerLink } from 'components/molecules';
 
 import './styles.scss';
 
@@ -13,12 +14,21 @@ const FollowUs = () => (
 		<Image className="follow-us_image" src="/images/payment.png" />
 		<FlexBox align>
 			<TextBlock className="follow-us_banner" variant="h6">Follow Us</TextBlock>
-			<SocialIcon service="facebook" />
-			<SocialIcon service="twitter" />
-			<SocialIcon service="linkedin" />
-			<SocialIcon service="googleplus" />
-			<SocialIcon service="youtube" />
-			<SocialIcon service="linkedin" />
+			<ContainerLink external to="https://www.facebook.com/LinguaStorm/">
+				<SocialIcon service="facebook" />
+			</ContainerLink>
+			<ContainerLink external to="https://www.pinterest.com/linguastormonline/">
+				<SocialIcon service="pinterest" />
+			</ContainerLink>
+			<ContainerLink external to="https://www.linkedin.com/company/linguastorm/">
+				<SocialIcon service="linkedin" />
+			</ContainerLink>
+			<ContainerLink external to="https://www.youtube.com/channel/UCpJ63i_zeuS9iAtD1o9A1tQ">
+				<SocialIcon service="youtube" />
+			</ContainerLink>
+			<ContainerLink external to="https://www.instagram.com/linguastormonline/">
+				<SocialIcon service="instagram" />
+			</ContainerLink>
 		</FlexBox>
 	</FlexBox>
 );

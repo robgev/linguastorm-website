@@ -7,7 +7,7 @@ const COLORS = {
 	facebook: '#3A589B',
 	twitter: '#598DCA',
 	linkedin: '#007AB9',
-	googleplus: '#D6492F',
+	instagram: '#D6492F',
 	youtube: '#FF0000',
 	pinterest: '#D73633',
 };
