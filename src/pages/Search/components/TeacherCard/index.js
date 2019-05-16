@@ -35,7 +35,7 @@ const TeacherCard = ({
 		// greetingText,
 		// headlineText,
 		shortBio,
-		// videoLink,
+		videoLink,
 		user: {
 			// id: teacherUserId,
 			fullName,

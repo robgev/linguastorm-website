@@ -113,6 +113,7 @@ export const GET_TEACHER_COURSES = gql`
 					groupTrialPrice
 					individualTrialPrice
 					isNative
+					videoLink
 				}
 				cursor
 			}
