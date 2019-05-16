@@ -92,9 +92,7 @@ export const GET_TEACHER_COURSES = gql`
 						id
 						rating
 						country
-						greetingText
-						headlineText
-						summaryText
+						shortBio
 						user {
 							id
 							fullName
@@ -104,7 +102,6 @@ export const GET_TEACHER_COURSES = gql`
 							englishName
 							code
 						}
-						videoLink
 					}
 					language {
 						englishName

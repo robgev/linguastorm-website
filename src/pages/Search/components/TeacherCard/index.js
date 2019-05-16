@@ -34,7 +34,7 @@ const TeacherCard = ({
 		languages,
 		// greetingText,
 		// headlineText,
-		summaryText,
+		shortBio,
 		// videoLink,
 		user: {
 			// id: teacherUserId,
@@ -81,7 +81,7 @@ const TeacherCard = ({
 					)}
 					{value === 1 && (
 						<TeacherStory
-							story={summaryText}
+							story={shortBio}
 						/>
 					)}
 					{value === 2 && (
