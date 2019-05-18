@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container } from 'components/atoms';
 import {
 	Header,
 	Footer,
 	Layout,
+	VideoPopup,
 } from 'components/molecules';
 import { Query } from 'components/organisms';
 import {
@@ -56,6 +57,12 @@ const Search = (props) => {
 		};
 	};
 
+	const [ src, setSrc ] = useState('');
+
+	const onClose = () => {
+		setSrc('');
+	};
+
 	// const resetFilters = () => {
 	// 	history.replace(`${location.pathname}`);
 	// };
@@ -88,6 +95,7 @@ const Search = (props) => {
 						data.allTeacherCourses.edges.map(tc => (
 							<TeacherCard
 								key={tc.node.id}
+								setSrc={setSrc}
 								{...tc.node}
 							/>
 						))}
@@ -97,6 +105,11 @@ const Search = (props) => {
 			<Container className="teachers_search-results" />
 		</Layout>
 		<Footer cover />
+		<VideoPopup
+			onClose={onClose}
+			open={src !== ''}
+			src={src}
+		/>
 		</>
 	);
 };

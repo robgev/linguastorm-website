@@ -1,5 +1,6 @@
 export {
 	Menu,
+	Close,
 	MoreVert,
 	PlayArrow as Play,
 	ArrowDropDown as Down,

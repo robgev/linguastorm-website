@@ -18,6 +18,7 @@ import './styles.scss';
 
 const TeacherCard = ({
 	// id,
+	setSrc,
 	teacher,
 	isNative,
 	language,
@@ -47,6 +48,10 @@ const TeacherCard = ({
 		setValue(value);
 	};
 
+	const openVideo = () => {
+		setSrc(videoLink);
+	};
+
 	return (
 		<PaperContainer className="teacher_card_paper">
 			<FlexBox align className="teacher-card_container">
@@ -55,7 +60,7 @@ const TeacherCard = ({
 						src={profileImage}
 						className="teacher-card_hexagon"
 					/>
-					<RoundButton className="teacher-card_play-button">
+					<RoundButton onClick={openVideo} className="teacher-card_play-button">
 						<Play color="secondary" />
 					</RoundButton>
 				</Container>

@@ -13,7 +13,7 @@ import { Layout } from 'components/molecules';
 import './styles.scss';
 
 const ContactUs = () => (
-	<Container className="contact-us_container">
+	<Container id="contact" className="contact-us_container">
 		<Layout>
 			<FlexBox column align>
 				<Headline className="contact-us_headline">

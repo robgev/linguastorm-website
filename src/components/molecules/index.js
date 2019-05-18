@@ -1,4 +1,5 @@
 export { default as BlogPost } from './BlogPost';
+export { default as CloseButton } from './CloseButton';
 export { default as ContainerLink } from './ContainerLink';
 export { default as EmptyCard } from './EmptyCard';
 export { default as Footer } from './Footer';
@@ -13,3 +14,4 @@ export { default as PriceTag } from './PriceTag';
 export { default as PrimaryLink } from './PrimaryLink';
 export { default as Select } from './Select';
 export { default as TopBar } from './TopBar';
+export { default as VideoPopup } from './VideoPopup';

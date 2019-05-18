@@ -1,6 +1,6 @@
 import React from 'react';
-import { FlexBox, Image, Link } from 'components/atoms';
-import { Menu, LanguageMenuItem } from 'components/molecules';
+import { FlexBox, Image, Link, MenuItem } from 'components/atoms';
+import { Menu, LanguageMenuItem, ContainerLink } from 'components/molecules';
 import Logo from 'assets/images/logo.png';
 import LANGUAGES from 'constants/Languages';
 
@@ -13,7 +13,24 @@ const ITEM_HEIGHT = 48;
 
 const TopBar = () => (
 	<FlexBox className="menu-bar" justifyBetween align>
-		<NavMenu />
+		<Menu
+			actionElement={(onClick) =>
+				<NavMenu onClick={onClick} />
+			}
+		>
+			<ContainerLink to="/">
+				<MenuItem>Home</MenuItem>
+			</ContainerLink>
+			<ContainerLink to="/about">
+				<MenuItem>About Us</MenuItem>
+			</ContainerLink>
+			<ContainerLink to="/search">
+				<MenuItem>Our Teachers</MenuItem>
+			</ContainerLink>
+			<ContainerLink external target="_self" to="/#contact">
+				<MenuItem>Contact Us</MenuItem>
+			</ContainerLink>
+		</Menu>
 		<Link to="/">
 			<Image alt="Logo" src={Logo} />
 		</Link>
