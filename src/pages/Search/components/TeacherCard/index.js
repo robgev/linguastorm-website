@@ -22,6 +22,7 @@ const TeacherCard = ({
 	teacher,
 	isNative,
 	language,
+	videoLink,
 	groupPrice,
 	individualPrice,
 	groupTrialPrice,
@@ -36,7 +37,6 @@ const TeacherCard = ({
 		// greetingText,
 		// headlineText,
 		shortBio,
-		videoLink,
 		user: {
 			// id: teacherUserId,
 			fullName,
@@ -57,7 +57,7 @@ const TeacherCard = ({
 			<FlexBox align className="teacher-card_container">
 				<Container className="teacher-card_hexagon-container">
 					<Hexagon
-						src={profileImage}
+						src={`https://dev-app.linguastorm.com/media/${profileImage}`}
 						className="teacher-card_hexagon"
 					/>
 					<RoundButton onClick={openVideo} className="teacher-card_play-button">
