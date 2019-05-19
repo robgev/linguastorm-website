@@ -32,7 +32,7 @@ const Hiring = () => (
 						And the good news is that we love awesome people to join us who share our values and culture!
 					</ContentText>
 				</Container>
-				<YouTubeVideo />
+				<YouTubeVideo autoplay />
 			</FlexBox>
 		</Layout>
 	</FlexBox>

@@ -21,8 +21,9 @@
 		font-size: 12px;
 	}
 	.molecule_select-text {
-		display: inline-flex;
-		align-items: center;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
 		padding-right: 15px;
 		font-weight: 500;
 		> svg {

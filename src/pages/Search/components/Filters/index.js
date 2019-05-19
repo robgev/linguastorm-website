@@ -18,7 +18,6 @@ import './styles.scss';
 
 const Filters = ({
 	data: {
-		allSubCourses,
 		allLanguages,
 		allCourses,
 	},
@@ -63,6 +62,10 @@ const Filters = ({
 		: allLanguages.map(({ englishName, code }) =>
 			<MenuItem key={code} value={code}>{englishName}</MenuItem>
 		);
+
+	const allSubCourses = (course && allCourses)
+		? allCourses.edges.find(c => c.node.id === course).subCourses
+		: null;
 
 	return (
 		<FlexBox align justifyBetween className="search_filters-container">
@@ -119,18 +122,18 @@ const Filters = ({
 								<MenuItem key={node.id} value={node.id}>{node.title}</MenuItem>
 							)}
 					</Select>
-					<Select
-						label="SubCourse"
-						value={course}
-						className="search_filters-select"
-						onChange={changeFilters('subCourses')}
-					>
-						{!allSubCourses
-							? null
-							: allSubCourses.edges.map(({ node }) =>
+					{ course && allSubCourses && allSubCourses.edges.length &&
+						<Select
+							label="SubCourse"
+							value={course}
+							className="search_filters-select"
+							onChange={changeFilters('subCourses')}
+						>
+							{	allSubCourses.edges.map(({ node }) =>
 								<MenuItem key={node.id} value={node.id}>{node.name}</MenuItem>
 							)}
-					</Select>
+						</Select>
+					}
 				</FlexBox>
 			</FlexBox>
 			<FlexBox column>

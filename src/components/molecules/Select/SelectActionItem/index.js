@@ -30,7 +30,7 @@ const SelectActionItem = ({
 				fullWidth
 				justifyBetween
 			>
-				<TextBlock className="molecule_select-text">
+				<TextBlock className="molecule_select-text" title={value}>
 					{isEmpty ? label : value}
 				</TextBlock>
 				{open

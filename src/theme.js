@@ -18,12 +18,12 @@ export default createMuiTheme({
 	typography: {
 		useNextVariants: true,
 		fontFamily: [
-			'Gotham',
+			'proxima-nova',
 			'Roboto',
 			'sans-serif',
 		],
 		h1: {
 			fontSize: '3rem'
 		}
-  },
+	},
 });

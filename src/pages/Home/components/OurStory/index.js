@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-	Text,
 	Button,
 	FlexBox,
 	Headline,

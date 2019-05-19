@@ -37,14 +37,6 @@ export const GET_ALL_LANGUAGES_FILTER = gql`
 
 export const GET_ALL_FILTERS = gql`
 	{
-		allSubCourses {
-			edges {
-				node {
-					name,
-					id,
-				}
-			}
-		},
 		allLanguages{
 			englishName
 			code
@@ -54,9 +46,17 @@ export const GET_ALL_FILTERS = gql`
 				node {
 					title,
 					id,
+					subCourses {
+						edges {
+							node {
+								title,
+								id
+							}
+						}
+					}
 				}
 			}
-		},
+		}
 	}
 `;
 
@@ -66,7 +66,7 @@ export const GET_ALL_FILTERS = gql`
 export const GET_TEACHER_COURSES = gql`
 	query fetchTeachers(
 			$id: ID,
-			$subCourses: [ID],
+			$courses: [ID],
 			$levelA: Boolean,
 			$levelB: Boolean,
 			$levelC: Boolean,
@@ -77,7 +77,7 @@ export const GET_TEACHER_COURSES = gql`
 		) {
 		allTeacherCourses(
 			id: $id,
-			subCourses: $subCourses,
+			courses: $courses,
 			levelA: $levelA,
 			levelB: $levelB,
 			levelC: $levelC,
